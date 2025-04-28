@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Striking Elegance</title>
+  <meta name="description" content="Get in touch with Striking Elegance for event rentals, bookings, or personalized styling consultations." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">Striking Elegance</a>
+      <div class="toggle-button" id="toggle-button">
+        <span></span><span></span><span></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="testimonials.html">Testimonials</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- CONTACT FORM -->
+  <section class="section white-bg" data-aos="fade-up">
+    <div class="container" style="max-width: 700px;">
+      <h2 style="text-align:center;">Get In Touch</h2>
+      <p style="text-align:center;">We’d love to help you design your dream event. Fill out the form and we’ll get back to you within 24 hours.</p>
+
+      <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+        <label for="name">Name *</label>
+        <input type="text" name="name" required>
+
+        <label for="email">Email *</label>
+        <input type="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" name="phone">
+
+        <label for="eventDate">Event Date</label>
+        <input type="date" name="eventDate">
+
+        <label for="location">Event Location</label>
+        <input type="text" name="location">
+
+        <label for="message">Message</label>
+        <textarea name="message" rows="6" placeholder="Tell us about your event..."></textarea>
+
+        <!-- Hidden auto-filled from products page -->
+        <input type="hidden" name="productSummary" id="productSummary" />
+
+        <button type="submit" class="cta-button small" style="margin-top: 20px;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+<!-- FOOTER -->
+<footer class="footer light-bg">
+    <div class="container">
+      <p>
+        <div class="social-links" style="margin-top: 20px;">
+          <a href="https://www.instagram.com/strikingelegance/" target="_blank" aria-label="Instagram">
+            <img src="assets/icons/instagram.svg" alt="Instagram" />
+          </a>
+          <a href="https://www.facebook.com/StrikingEleganceLLC/" target="_blank" aria-label="Facebook">
+            <img src="assets/icons/facebook.svg" alt="Facebook" />
+          </a>
+          <a href="https://www.pinterest.com/strikinge/" target="_blank" aria-label="Pinterest">
+            <img src="assets/icons/pinterest.svg" alt="Pinterest" />
+          </a>
+        </div>
+        <br>
+        <a href="index.html">Home</a>&nbsp;|&nbsp;
+        <a href="products.html">Products</a>&nbsp;|&nbsp;
+        <a href="packages.html">Packages</a>&nbsp;|&nbsp;
+        <a href="blog.html">Blog</a>&nbsp;|&nbsp;
+        <a href="testimonials.html">Testimonials</a>&nbsp;|&nbsp;
+        <a href="contact.html">Contact</a>
+        <br>
+        <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+        <a href="terms.html">Terms of Use</a> &nbsp;|&nbsp;
+        <a href="faq.html">FAQ</a>
+        <p>&copy; 2025 Striking Elegance. All rights reserved.</p>
+  
+      </p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="js/header.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000, easing: 'ease-in-out', once: true });
+
+    // Fill in quote from GET parameter
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const selected = params.get("selectedProducts");
+      const msgBox = document.querySelector('textarea[name="message"]');
+      const summary = document.getElementById("productSummary");
+
+      if (selected) {
+        const formatted = selected.replace(/,/g, '\n');
+        msgBox.value = "Interested in:\n" + formatted + "\n\n";
+        summary.value = formatted;
+      }
+    });
+  </script>
+</body>
+</html>

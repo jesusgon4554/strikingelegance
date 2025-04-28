@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products | Striking Elegance</title>
+  <meta name="description" content="Luxury event rental catalog featuring high-end furniture, ottomans, and decor.">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- HEADER / NAV -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">Striking Elegance</a>
+    <div class="toggle-button" id="toggle-button">
+      <span></span><span></span><span></span>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="packages.html">Packages</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PRODUCTS SECTION -->
+<section class="section light-bg">
+  <div class="container">
+    <!-- <h1>Our Rental Products</h1> -->
+
+      <!-- BROCHURE DOWNLOAD -->
+  <section class="section white-bg brochure-download" data-aos="fade-up">
+    <div class="container" style="text-align: center;">
+      <h2 style="margin-bottom: 12px;">Get Our Full Product Catalog</h2>
+      <p style="margin-bottom: 24px;">View our complete collection of luxury rentals, pricing, and package options in one elegant PDF.</p>
+      <a href="assets/Striking-Elegance-Brochure.pdf" class="cta-button-outline" target="_blank" download>
+        📥 Download Brochure
+      </a>
+    </div>
+  </section>
+
+    <input type="text" id="search-bar" class="search-bar" placeholder="Search products..." />
+
+    <div class="filters">
+      <button class="filter-btn" data-category="all">All</button>
+      <button class="filter-btn" data-category="furniture">Furniture</button>
+      <button class="filter-btn" data-category="lighting">Lighting</button>
+      <button class="filter-btn" data-category="chairs--stools">Chairs & Stools</button>
+      <button class="filter-btn" data-category="tables">Tables</button>
+      <button class="filter-btn" data-category="dance-floors">Dance Floors</button>
+      <button class="filter-btn" data-category="backdrops">Backdrops</button>
+      <button class="filter-btn" data-category="bars">Bars</button>
+      <button class="filter-btn" data-category="decor">Decor</button>
+      <button class="filter-btn" data-category="linens">Linens</button>
+      <button class="filter-btn" data-category="glassware">Glassware</button>
+      <button class="filter-btn" data-category="serveware">Serveware</button>
+      <button class="filter-btn" data-category="canopies">Canopies</button>
+    </div>
+
+    <!--Quote-->
+    <div id="quote-total" class="quote-total">Estimated Total: $0.00</div>
+    <div id="quote-button-wrapper" style="display: none; text-align: center; margin-top: 20px;">
+        <button type="submit" form="product-selection-form" class="cta-button small">Proceed to Contact</button>
+    </div>
+    <br>
+    <form id="product-selection-form" class="product-grid" action="contact.html" method="GET">
+      <input type="hidden" name="selectedProducts" id="selectedProducts" />
+
+<!-- Furniture -->
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="8' White Leatherette Couch" class="product-image" />
+  <h3>8' White Leatherette Couch</h3>
+  <p>$150</p>
+  <input type="number" min="0" class="qty" data-price="150" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="6' White Leatherette Ottoman 'Twinkie'" class="product-image" />
+  <h3>6' White Leatherette Ottoman "Twinkie"</h3>
+  <p>$125</p>
+  <input type="number" min="0" class="qty" data-price="125" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="8' White Leatherette Ottoman 'Twinkie'" class="product-image" />
+  <h3>8' White Leatherette Ottoman "Twinkie"</h3>
+  <p>$145</p>
+  <input type="number" min="0" class="qty" data-price="145" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="32x32 White Leatherette Cube Ottoman" class="product-image" />
+  <h3>32"x32" White Leatherette Ottoman Cube</h3>
+  <p>$95</p>
+  <input type="number" min="0" class="qty" data-price="95" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="Walk Around Couch" class="product-image" />
+  <h3>White Leatherette Walk Around Couch</h3>
+  <p>$400</p>
+  <input type="number" min="0" class="qty" data-price="400" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="furniture">
+  <img src="assets/placeholder.jpg" alt="18x18 White Cube Ottoman" class="product-image" />
+  <h3>18"x18" White Leatherette Cube Ottoman</h3>
+  <p>$42.50</p>
+  <input type="number" min="0" class="qty" data-price="42.5" placeholder="Qty" />
+</div>
+
+<!-- Lighting -->
+<div class="product-card" data-category="lighting">
+  <img src="assets/placeholder.jpg" alt="Large Crystal Chandelier (12 Arm)" class="product-image" />
+  <h3>Large Crystal Chandelier (12 Arm)</h3>
+  <p>$225</p>
+  <input type="number" min="0" class="qty" data-price="225" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="lighting">
+  <img src="assets/placeholder.jpg" alt="Medium Crystal Chandelier" class="product-image" />
+  <h3>Medium Crystal Chandelier</h3>
+  <p>$175</p>
+  <input type="number" min="0" class="qty" data-price="175" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="lighting">
+  <img src="assets/placeholder.jpg" alt="Small Crystal Chandelier" class="product-image" />
+  <h3>Small Crystal Chandelier</h3>
+  <p>$125</p>
+  <input type="number" min="0" class="qty" data-price="125" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="lighting">
+  <img src="assets/placeholder.jpg" alt="Uplight" class="product-image" />
+  <h3>Uplight</h3>
+  <p>$35</p>
+  <input type="number" min="0" class="qty" data-price="35" placeholder="Qty" />
+</div>
+
+<!-- Chairs & Stools -->
+<div class="product-card" data-category="chairs--stools">
+  <img src="assets/placeholder.jpg" alt="Samsonite Folding Chair" class="product-image" />
+  <h3>Samsonite Folding Chair</h3>
+  <p>$1.50</p>
+  <input type="number" min="0" class="qty" data-price="1.5" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="chairs--stools">
+  <img src="assets/placeholder.jpg" alt="Resin Folding White Chair with Pad" class="product-image" />
+  <h3>Resin Folding White Chair with Pad</h3>
+  <p>$2.50</p>
+  <input type="number" min="0" class="qty" data-price="2.5" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="chairs--stools">
+  <img src="assets/placeholder.jpg" alt="Gold Chiavari Chair" class="product-image" />
+  <h3>Gold Chiavari Chair</h3>
+  <p>$5</p>
+  <input type="number" min="0" class="qty" data-price="5" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="chairs--stools">
+  <img src="assets/placeholder.jpg" alt="Clear Chiavari Chair" class="product-image" />
+  <h3>Clear Chiavari Chair</h3>
+  <p>$6.50</p>
+  <input type="number" min="0" class="qty" data-price="6.5" placeholder="Qty" />
+</div>
+
+<!-- Tables -->
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="60in Round Table" class="product-image" />
+  <h3>60" Round Folding Table</h3>
+  <p>$12</p>
+  <input type="number" min="0" class="qty" data-price="12" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="72in Round Table" class="product-image" />
+  <h3>72" Round Folding Table</h3>
+  <p>$12</p>
+  <input type="number" min="0" class="qty" data-price="12" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="8x30 Banquet Table" class="product-image" />
+  <h3>8'x30" Banquet Table</h3>
+  <p>$12</p>
+  <input type="number" min="0" class="qty" data-price="12" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="5x5 King Table" class="product-image" />
+  <h3>5'x5' Square King Table</h3>
+  <p>$20</p>
+  <input type="number" min="0" class="qty" data-price="20" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="Farm Table" class="product-image" />
+  <h3>8' Farm Table - Light or Dark Wood</h3>
+  <p>$200</p>
+  <input type="number" min="0" class="qty" data-price="200" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="Rustic Wood Square Coffee Table" class="product-image" />
+  <h3>Rustic Wood Square Coffee Table</h3>
+  <p>$125</p>
+  <input type="number" min="0" class="qty" data-price="125" placeholder="Qty" />
+</div>
+
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="8' Farm Light/Dark Wood Table" class="product-image" />
+  <h3>8' Farm Light/Dark Wood Table</h3>
+  <p>$200</p>
+  <input type="number" min="0" class="qty" data-price="200" placeholder="Qty" />
+</div>
+
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="72&quot;x30&quot; Acrylic Table" class="product-image" />
+  <h3>72"x30" Acrylic Table</h3>
+  <p>$300</p>
+  <input type="number" min="0" class="qty" data-price="300" placeholder="Qty" />
+</div>
+
+<div class="product-card" data-category="tables">
+  <img src="assets/placeholder.jpg" alt="48&quot;x96&quot; Acrylic King Table" class="product-image" />
+  <h3>48"x96" Acrylic King Table</h3>
+  <p>$300</p>
+  <input type="number" min="0" class="qty" data-price="300" placeholder="Qty" />
+</div>
+
+<!-- DANCE FLOORS -->
+<div class="product-card" data-category="dance-floors">
+  <img src="assets/placeholder.jpg" alt="12'x12' White Dance Floor" class="product-image" />
+  <h3>12'x12' White Dance Floor</h3>
+  <p>$450</p>
+  <input type="number" min="0" class="qty" data-price="450" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="dance-floors">
+  <img src="assets/placeholder.jpg" alt="16'x16' White Dance Floor" class="product-image" />
+  <h3>16'x16' White Dance Floor</h3>
+  <p>$650</p>
+  <input type="number" min="0" class="qty" data-price="650" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="dance-floors">
+  <img src="assets/placeholder.jpg" alt="20'x20' White Dance Floor" class="product-image" />
+  <h3>20'x20' White Dance Floor</h3>
+  <p>$850</p>
+  <input type="number" min="0" class="qty" data-price="850" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="dance-floors">
+  <img src="assets/placeholder.jpg" alt="Black & White Checkerboard Floor" class="product-image" />
+  <h3>Black & White Checkerboard Floor</h3>
+  <p>$850</p>
+  <input type="number" min="0" class="qty" data-price="850" placeholder="Qty" />
+</div>
+
+<!-- BACKDROPS -->
+<div class="product-card" data-category="backdrops">
+  <img src="assets/placeholder.jpg" alt="White Sheer Backdrop" class="product-image" />
+  <h3>White Sheer Backdrop (10ft x 10ft)</h3>
+  <p>$150</p>
+  <input type="number" min="0" class="qty" data-price="150" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="backdrops">
+  <img src="assets/placeholder.jpg" alt="Sequin Gold Backdrop" class="product-image" />
+  <h3>Sequin Gold Backdrop</h3>
+  <p>$175</p>
+  <input type="number" min="0" class="qty" data-price="175" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="backdrops">
+  <img src="assets/placeholder.jpg" alt="Boxwood Greenery Wall" class="product-image" />
+  <h3>Boxwood Greenery Wall</h3>
+  <p>$275</p>
+  <input type="number" min="0" class="qty" data-price="275" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="backdrops">
+  <img src="assets/placeholder.jpg" alt="Floral Wall" class="product-image" />
+  <h3>Floral Wall (8ft x 8ft)</h3>
+  <p>$350</p>
+  <input type="number" min="0" class="qty" data-price="350" placeholder="Qty" />
+</div>
+
+<!-- BARS -->
+<div class="product-card" data-category="bars">
+  <img src="assets/placeholder.jpg" alt="White Tufted Bar" class="product-image" />
+  <h3>White Tufted Bar</h3>
+  <p>$250</p>
+  <input type="number" min="0" class="qty" data-price="250" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="bars">
+  <img src="assets/placeholder.jpg" alt="Gold Mirror Bar" class="product-image" />
+  <h3>Gold Mirror Bar</h3>
+  <p>$300</p>
+  <input type="number" min="0" class="qty" data-price="300" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="bars">
+  <img src="assets/placeholder.jpg" alt="Acrylic Light-Up Bar" class="product-image" />
+  <h3>Acrylic Light-Up Bar</h3>
+  <p>$350</p>
+  <input type="number" min="0" class="qty" data-price="350" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="bars">
+  <img src="assets/placeholder.jpg" alt="Rustic Wood Bar" class="product-image" />
+  <h3>Rustic Wood Bar</h3>
+  <p>$225</p>
+  <input type="number" min="0" class="qty" data-price="225" placeholder="Qty" />
+</div>
+
+<!-- DECOR -->
+<div class="product-card" data-category="decor">
+  <img src="assets/placeholder.jpg" alt="Donut Wall" class="product-image" />
+  <h3>Donut Wall</h3>
+  <p>$100</p>
+  <input type="number" min="0" class="qty" data-price="100" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="decor">
+  <img src="assets/placeholder.jpg" alt="Champagne Wall" class="product-image" />
+  <h3>Champagne Wall</h3>
+  <p>$200</p>
+  <input type="number" min="0" class="qty" data-price="200" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="decor">
+  <img src="assets/placeholder.jpg" alt="Acrylic Tabletop Signage" class="product-image" />
+  <h3>Acrylic Tabletop Signage</h3>
+  <p>$25</p>
+  <input type="number" min="0" class="qty" data-price="25" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="decor">
+  <img src="assets/placeholder.jpg" alt="Vintage Rug" class="product-image" />
+  <h3>Vintage Rug</h3>
+  <p>$80</p>
+  <input type="number" min="0" class="qty" data-price="80" placeholder="Qty" />
+</div>
+
+<!-- LINENS -->
+<div class="product-card" data-category="linens">
+  <img src="assets/placeholder.jpg" alt="120&quot; Round White Polyester" class="product-image" />
+  <h3>120" Round White Polyester</h3>
+  <p>$12</p>
+  <input type="number" min="0" class="qty" data-price="12" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="linens">
+  <img src="assets/placeholder.jpg" alt="132&quot; Round Black Polyester" class="product-image" />
+  <h3>132" Round Black Polyester</h3>
+  <p>$13</p>
+  <input type="number" min="0" class="qty" data-price="13" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="linens">
+  <img src="assets/placeholder.jpg" alt="Gold Sequin Table Runner" class="product-image" />
+  <h3>Table Runners - Gold Sequin</h3>
+  <p>$8</p>
+  <input type="number" min="0" class="qty" data-price="8" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="linens">
+  <img src="assets/placeholder.jpg" alt="Napkins" class="product-image" />
+  <h3>Napkins (Various Colors)</h3>
+  <p>$1.50</p>
+  <input type="number" min="0" class="qty" data-price="1.5" placeholder="Qty" />
+</div>
+
+<!-- GLASSWARE -->
+<div class="product-card" data-category="glassware">
+  <img src="assets/placeholder.jpg" alt="Wine Glass" class="product-image" />
+  <h3>Wine Glass</h3>
+  <p>$1.25</p>
+  <input type="number" min="0" class="qty" data-price="1.25" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="glassware">
+  <img src="assets/placeholder.jpg" alt="Champagne Flute" class="product-image" />
+  <h3>Champagne Flute</h3>
+  <p>$1.25</p>
+  <input type="number" min="0" class="qty" data-price="1.25" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="glassware">
+  <img src="assets/placeholder.jpg" alt="Water Goblet" class="product-image" />
+  <h3>Water Goblet</h3>
+  <p>$1.25</p>
+  <input type="number" min="0" class="qty" data-price="1.25" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="glassware">
+  <img src="assets/placeholder.jpg" alt="Highball Glass" class="product-image" />
+  <h3>Highball Glass</h3>
+  <p>$1.25</p>
+  <input type="number" min="0" class="qty" data-price="1.25" placeholder="Qty" />
+</div>
+
+<!-- SERVEWARE -->
+<div class="product-card" data-category="serveware">
+  <img src="assets/placeholder.jpg" alt="Silver Serving Tray" class="product-image" />
+  <h3>Silver Serving Tray</h3>
+  <p>$5</p>
+  <input type="number" min="0" class="qty" data-price="5" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="serveware">
+  <img src="assets/placeholder.jpg" alt="Gold Cake Stand" class="product-image" />
+  <h3>Gold Cake Stand</h3>
+  <p>$20</p>
+  <input type="number" min="0" class="qty" data-price="20" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="serveware">
+  <img src="assets/placeholder.jpg" alt="Chafing Dish" class="product-image" />
+  <h3>Chafing Dish</h3>
+  <p>$25</p>
+  <input type="number" min="0" class="qty" data-price="25" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="serveware">
+  <img src="assets/placeholder.jpg" alt="Ice Bucket" class="product-image" />
+  <h3>Ice Bucket</h3>
+  <p>$8</p>
+  <input type="number" min="0" class="qty" data-price="8" placeholder="Qty" />
+</div>
+
+<!-- CANOPIES -->
+<div class="product-card" data-category="canopies">
+  <img src="assets/placeholder.jpg" alt="10'x10' White Tent" class="product-image" />
+  <h3>10'x10' White Tent</h3>
+  <p>$100</p>
+  <input type="number" min="0" class="qty" data-price="100" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="canopies">
+  <img src="assets/placeholder.jpg" alt="20'x20' High Peak Tent" class="product-image" />
+  <h3>20'x20' High Peak Tent</h3>
+  <p>$350</p>
+  <input type="number" min="0" class="qty" data-price="350" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="canopies">
+  <img src="assets/placeholder.jpg" alt="30'x30' Frame Tent" class="product-image" />
+  <h3>30'x30' Frame Tent</h3>
+  <p>$550</p>
+  <input type="number" min="0" class="qty" data-price="550" placeholder="Qty" />
+</div>
+<div class="product-card" data-category="canopies">
+  <img src="assets/placeholder.jpg" alt="40'x60' Pole Tent" class="product-image" />
+  <h3>40'x60' Pole Tent</h3>
+  <p>$1000</p>
+  <input type="number" min="0" class="qty" data-price="1000" placeholder="Qty" />
+</div>
+</form>
+
+
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer light-bg">
+  <div class="container">
+    <p>
+      <div class="social-links" style="margin-top: 20px;">
+        <a href="https://www.instagram.com/strikingelegance/" target="_blank" aria-label="Instagram">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.facebook.com/StrikingEleganceLLC/" target="_blank" aria-label="Facebook">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.pinterest.com/strikinge/" target="_blank" aria-label="Pinterest">
+          <img src="assets/icons/pinterest.svg" alt="Pinterest" />
+        </a>
+      </div>
+      <br>
+      <a href="index.html">Home</a>&nbsp;|&nbsp;
+      <a href="products.html">Products</a>&nbsp;|&nbsp;
+      <a href="packages.html">Packages</a>&nbsp;|&nbsp;
+      <a href="blog.html">Blog</a>&nbsp;|&nbsp;
+      <a href="testimonials.html">Testimonials</a>&nbsp;|&nbsp;
+      <a href="contact.html">Contact</a>
+      <br>
+      <a href="privacy.html">Privacy Policy</a> &nbsp;|&nbsp;
+      <a href="terms.html">Terms of Use</a> &nbsp;|&nbsp;
+      <a href="faq.html">FAQ</a>
+      <p>&copy; 2025 Striking Elegance. All rights reserved.</p>
+
+    </p>
+  </div>
+</footer>
+
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" style="display:none;">
+<span class="close" id="modalClose">&times;</span>
+<img class="modal-content" id="modalImg">
+</div>
+
+<!-- JS -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+const toggleButton = document.getElementById("toggle-button");
+const navLinks = document.getElementById("nav-links");
+toggleButton.addEventListener("click", () => navLinks.classList.toggle("show"));
+
+const filterButtons = document.querySelectorAll(".filter-btn");
+const searchBar = document.getElementById("search-bar");
+const products = document.querySelectorAll(".product-card");
+
+filterButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const cat = btn.dataset.category;
+    products.forEach(p => {
+      const match = cat === "all" || p.dataset.category === cat;
+      p.style.display = match ? "block" : "none";
+    });
+  });
+});
+
+searchBar.addEventListener("input", () => {
+  const val = searchBar.value.toLowerCase();
+  products.forEach(p => {
+    const name = p.querySelector("h3").textContent.toLowerCase();
+    p.style.display = name.includes(val) ? "block" : "none";
+  });
+});
+
+const qtyInputs = document.querySelectorAll(".qty");
+const totalDisplay = document.getElementById("quote-total");
+const quoteBtnWrap = document.getElementById("quote-button-wrapper");
+const selectedField = document.getElementById("selectedProducts");
+
+function updateQuote() {
+  let total = 0;
+  let any = false;
+  let lines = [];
+
+  qtyInputs.forEach(input => {
+    const qty = parseInt(input.value) || 0;
+    const price = parseFloat(input.dataset.price);
+    const name = input.closest(".product-card").querySelector("h3").textContent;
+
+    if (qty > 0) {
+      total += qty * price;
+      any = true;
+      lines.push(`${qty} x ${name} ($${price.toFixed(2)})`);
+    }
+  });
+
+  totalDisplay.textContent = `Estimated Total: $${total.toFixed(2)}`;
+  quoteBtnWrap.style.display = any ? "block" : "none";
+  selectedField.value = lines.join(", ");
+}
+
+qtyInputs.forEach(i => i.addEventListener("input", updateQuote));
+updateQuote();
+
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const modalClose = document.getElementById("modalClose");
+const imgs = document.querySelectorAll(".product-image");
+
+imgs.forEach(img => {
+  img.addEventListener("click", () => {
+    modal.style.display = "block";
+    modalImg.src = img.src;
+  });
+});
+
+modalClose.onclick = () => modal.style.display = "none";
+window.onclick = e => { if (e.target === modal) modal.style.display = "none"; };
+});
+</script>
+
+</body>
+</html>
